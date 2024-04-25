@@ -71,7 +71,7 @@ namespace IotEdgeModuleTutorialCICD
 
             byte[] messageBytes = message.GetBytes();
             string messageString = Encoding.UTF8.GetString(messageBytes);
-            Console.WriteLine($"Received message: {counterValue}, Body: [{messageString}]");
+            Console.WriteLine($"Received MESSAGE: {counterValue}, Body: [{messageString}]");
 
             if (!string.IsNullOrEmpty(messageString))
             {
